@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/metamask.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+
+  <body>
+    <!-- <h4>meta-wallet</h4> -->
+    <h2>META<span >wallet</h2>
+    <div class="border-main">
+    <section
+      id="wallet_info"
+      style="display: flex; justify-content: space-around; margin-top: 6rem;    position: relative;
+      bottom: 35px;"
+    >
+      ADRESS:
+      <p id="wallet_address"></p>
+      <p>Balance : <span id="wallet_balance"></span></p>
+    </section>
+
+    <form
+      style="
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        margin: auto;
+        padding: 61px;
+      "
+    >
+      <input type="text" value="" placeholder="author address" id="myInput" />
+      <input
+        type="text"
+        name="senderadress"
+        placeholder="sender ADRESS"
+        id="senderadress"
+        required
+      />
+
+      <input
+        type="number"
+        id="amount-send"
+        placeholder="amount u want to send"
+        name="amount-send"
+      /><br />
+    </form>
+
+    <div
+      class="buttons"
+      style="display: flex; justify-content: space-around; margin-top: 30px"
+    >
+      <button id="btn">connect wallet</button>
+      <button id="disconnect-btn">disconnet_wallet</button>
+      <button id="sendfaucet">send-faucet</button>
+    </div>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0-rc.0/web3.min.js"></script>
+    <script src="/metamask.js"></script>
+  </body>
+</html>
